@@ -27,7 +27,12 @@ export default defineConfig([
     },
   },
   {
-    files: ['*.config.js', '.lintstagedrc.js', 'vitest.config.js'],
+    files: [
+      '*.config.js',
+      '.lintstagedrc.js',
+      'vitest.config.js',
+      '.lighthouseci.js',
+    ],
     languageOptions: {
       globals: globals.node,
     },
