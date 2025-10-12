@@ -31,8 +31,8 @@ coverage/
 .env
 .env.local
 .env.*.local
-.env.development
 .env.production
+.env.development
 
 # CI/CD
 .vercel

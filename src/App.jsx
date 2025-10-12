@@ -1,11 +1,11 @@
+import Navbar from './components/navbar';
+
 const App = () => {
-    return (
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </div>
-    );
+  return (
+    <main>
+      <Navbar />
+    </main>
+  );
 };
 
 export default App;
