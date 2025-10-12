@@ -1,23 +1,23 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
-  font-family: "Regular";
-  src: url("/fonts/regular.otf");
+  font-family: 'Regular';
+  src: url('/fonts/regular.otf');
 }
 
 @font-face {
-  font-family: "Medium";
-  src: url("/fonts/medium.otf");
+  font-family: 'Medium';
+  src: url('/fonts/medium.otf');
 }
 
 @font-face {
-  font-family: "SemiBold";
-  src: url("/fonts/semibold.otf");
+  font-family: 'SemiBold';
+  src: url('/fonts/semibold.otf');
 }
 
 @font-face {
-  font-family: "Bold";
-  src: url("/fonts/bold.otf");
+  font-family: 'Bold';
+  src: url('/fonts/bold.otf');
 }
 
 * {
@@ -35,10 +35,10 @@
 }
 
 @theme {
-  --font-regular: "Regular";
-  --font-medium: "Medium";
-  --font-semibold: "SemiBold";
-  --font-bold: "Bold";
+  --font-regular: 'Regular';
+  --font-medium: 'Medium';
+  --font-semibold: 'SemiBold';
+  --font-bold: 'Bold';
   --color-primary: #0071e3;
   --color-dark-100: #86868b;
   --color-dark-200: #2e2e30;
@@ -347,7 +347,7 @@ body {
           border: 3px solid transparent; /* !important */
 
           ::before {
-            content: "";
+            content: '';
             pointer-events: none;
             position: absolute;
             inset: 0px;
