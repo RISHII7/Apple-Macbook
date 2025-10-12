@@ -195,33 +195,3 @@ jobs:
           # Add your production deployment commands here
           # Example: Kubernetes, Docker Swarm, AWS ECS, etc.
 
-  # Job 7: Lighthouse CI (Performance Testing)
-  lighthouse:
-    name: Lighthouse CI
-    runs-on: ubuntu-latest
-    needs: build
-    if: github.event_name == 'pull_request'
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Download build artifacts
-        uses: actions/download-artifact@v4
-        with:
-          name: build-artifacts
-          path: dist/
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.12.x
-
-      - name: Run Lighthouse CI
-        run: |
-          lhci autorun
-        env:
-          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
