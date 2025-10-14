@@ -4,6 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 
 import MacbookModel14 from '../../components/models/Macbook-14';
 import useMackbookStore from '../../store';
+import StudioLights from '../../three/studio-lights';
 
 const ProductViewer = () => {
   const { color, scale, setColor, setScale } = useMackbookStore();
@@ -62,7 +63,7 @@ const ProductViewer = () => {
         id="canvas"
         camera={{ position: [0, 2, 5], fov: 50, near: 0.1, far: 100 }}
       >
-        <ambientLight intensity={1} />
+        <StudioLights />
 
         <MacbookModel14 scale={0.06} position={[0, 0, 0]} />
 
