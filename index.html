@@ -16,8 +16,8 @@
     <meta name="msapplication-navbutton-color" content="#000000" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     
-    <!-- Basic CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; img-src 'self' data: https: blob:;" />
+    <!-- Basic CSP with worker support for Three.js -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https: blob:; worker-src 'self' blob:; img-src 'self' data: https: blob:;" />
   </head>
   <body>
     <div id="root"></div>
