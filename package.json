@@ -26,14 +26,14 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.7.6",
-    "@react-three/fiber": "^9.4.0",
-    "@tailwindcss/vite": "^4.1.14",
+    "@react-three/fiber": "^9.3.0",
+    "@tailwindcss/vite": "^4.1.13",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-responsive": "^10.0.1",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^4.1.13",
     "three": "^0.180.0",
     "zustand": "^5.0.8"
   },
@@ -73,5 +73,8 @@
     "lightningcss-linux-arm64-musl": "^1.30.2",
     "lightningcss-linux-x64-gnu": "^1.30.2",
     "lightningcss-linux-x64-musl": "^1.30.2"
+  },
+  "overrides": {
+    "three": "^0.180.0"
   }
 }
