@@ -64,6 +64,16 @@ const ProductViewer = () => {
       <Canvas
         id="canvas"
         camera={{ position: [0, 2, 5], fov: 50, near: 0.1, far: 100 }}
+        gl={{
+          antialias: true,
+          alpha: true,
+          preserveDrawingBuffer: false,
+          powerPreference: 'high-performance',
+        }}
+        onCreated={({ gl }) => {
+          // Ensure GL context is properly initialized
+          gl.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        }}
       >
         <StudioLights />
 
